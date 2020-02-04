@@ -1,3 +1,5 @@
+require 'pry'
+
 class Artist 
   attr_accessor :name
   
@@ -6,7 +8,8 @@ class Artist
   end
   
   def self.all
-    @@all << artists
+    @all << artists
   end
   
 end
+binding.pry
