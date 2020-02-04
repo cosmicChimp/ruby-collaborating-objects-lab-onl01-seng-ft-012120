@@ -6,7 +6,7 @@ class Artist
   end
   
   def self.all
-    @@all
+    @@all << artists
   end
   
 end
