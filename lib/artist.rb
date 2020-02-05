@@ -8,7 +8,7 @@ class Artist
   def initialize(name)#artist_name
     @name = name
     @songs = [] 
-    save
+    @@all << self
   end
 
   
@@ -42,10 +42,6 @@ class Artist
     artist
   end
 
-
-  def save
-    @@all << self
-  end
 
   def print_songs()
     puts @songs.collect {|x| x.name}
