@@ -21,7 +21,9 @@ class Artist
     song
   end
     
-  
+  def songs
+    
+  end
 
   def self.find_or_create_by_name(name)
     new_var = Artist.all.find {|x| x.name == name}
