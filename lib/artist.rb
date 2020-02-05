@@ -27,6 +27,8 @@ class Artist
     new_var = Artist.all.find {|x| x.name == name}
     if new_var.nil?
       new_var = Artist.new(name)
+    end
+    new_var
   end
 
 
